@@ -2,63 +2,82 @@
 
 /* Contenedor de las tarjetas */
 .services {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  /* Estilo para cada tarjeta de maquinaria */
-  .work-item {
-    background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1 1 400px; /* Ancho base de las tarjetas */
-    max-width: 400px; /* Ancho máximo para hacer las tarjetas más anchas */
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.2s;
-  }
-  
-  .work-item:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Encabezado de cada maquinaria */
-  .work-item h2 {
-    color: #333;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  /* Subtítulos de especificaciones y descripciones */
-  .work-item h3 {
-    color: #555;
-    font-size: 1.2em;
-    margin-bottom: 8px;
-  }
-  
-  /* Lista de productos */
-  .work-item ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .work-item ul li {
-    background-color: #e0f7fa;
-    border-radius: 4px;
-    margin-bottom: 5px;
-    padding: 5px;
-  }
-  
-  /* Separador opcional para productos */
-  .work-item .product-divider {
-    border-top: 1px solid #ddd;
-    margin: 10px 0;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Estilo para cada tarjeta de maquinaria */
+.work-item {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 400px; /* Ancho base de las tarjetas */
+  max-width: 400px; /* Ancho máximo para hacer las tarjetas más anchas */
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s;
+  display: flex; /* Alinea los elementos en columna */
+  flex-direction: column; /* Alinea los elementos en columna */
+}
+
+.work-item:hover {
+  transform: scale(1.05);
+}
+
+/* Encabezado de cada maquinaria */
+.work-item h2 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Subtítulos de especificaciones y descripciones */
+.work-item h3 {
+  color: #555;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+/* Lista de productos */
+.work-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.work-item ul li {
+  background-color: #e0f7fa;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+/* Separador opcional para productos */
+.work-item .product-divider {
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+/* Estilo unificado para botones */
+.close-button,
+.more-information {
+  background-color: #4682B4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: auto;        /* Ajusta el ancho al tamaño del contenido */
+  display: inline-block; /* Evita que el botón se expanda para ocupar todo el ancho */
+  text-align: center; /* Centra el texto dentro del botón */
+  margin: 1px;    
+}
+
 
 /* Estilo para el enlace de volver */
 /* Estilo para el encabezado de la página */
@@ -78,7 +97,7 @@
   position: absolute; /* Posiciona el enlace de forma absoluta */
   right: 0; /* Lo mueve al lado derecho */
   display: inline-block;
-  background-color: #007bff; /* Color de fondo */
+  background-color: #4682B4; /* Color de fondo */
   color: white; /* Color del texto */
   border-radius: 4px; /* Bordes redondeados */
   padding: 10px 20px; /* Espaciado interno */
@@ -89,11 +108,11 @@
 }
   
   .back-link:hover {
-    background-color: #0056b3; /* Color de fondo en hover */
+    background-color: #C0C0C0; /* Color de fondo en hover */
   }
   
   /* Estilo para el pie de página */
-  .page-footer {
+  .page-return {
     width: 85%;
     margin: 0 auto; /* Centra horizontalmente */
     position: relative; /* Para posicionar elementos dentro del contenedor */
@@ -103,3 +122,96 @@
     justify-content: center; /* Centra los elementos hijos horizontalmente */
     align-items: center; /* Alinea verticalmente */
   }
+
+  .mask img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Ajusta este valor según el tamaño que desees */
+    max-height: 200px; /* Ajusta este valor según el tamaño que desees */
+    object-fit: cover; /* Esto asegura que la imagen se ajuste al contenedor */
+  }
+
+
+                 /*Estilos de  modal*/
+/* Modal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 85vw; /* 85% del ancho de la ventana */
+  height: 85vh; /* 85% de la altura de la ventana */
+  display: flex; /* Alinea la imagen y el contenido en una fila */
+  flex-direction: column; /* Coloca el contenido y el pie del modal en una columna */
+  max-width: 1000px; /* Limita el ancho máximo si es necesario */
+  max-height: 800px; /* Limita la altura máxima si es necesario */
+}
+
+.modal-close {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 38px;
+  cursor: pointer;
+  z-index: 1001; /* Asegura que el botón de cerrar esté encima del contenido del modal */
+  margin: 10px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: calc(100% - 40px); /* Ajusta la altura para dejar espacio para el footer */
+}
+
+.modal-image-container {
+  flex: 1;
+  max-width: 50%; /* Limita el ancho máximo de la imagen al 50% del modal */
+  overflow: hidden; /* Asegura que la imagen no se desborde */
+}
+
+.modal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-text-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto; /* Permite el desplazamiento si el contenido es demasiado largo */
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end; /* Alinea el botón al final del pie del modal */
+  padding: 10px;
+  border-top: 1px solid #ddd; /* Agrega una línea superior para separar el pie del contenido */
+  background: #f7f7f7;
+}
+
+
+.close-button:hover,
+.more-information:hover {
+  background-color: #e0109e;
+}
+
+/* Botón de más información específico */
+.work-item .more-information {
+  margin-top: auto; /* Alinea el botón al final del contenedor */
+}

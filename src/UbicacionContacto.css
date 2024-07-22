@@ -1,0 +1,84 @@
+/* UbicacionContacto.css */
+
+.ubicacion-contacto {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .contact-form {
+    flex: 1;
+    min-width: 300px; /* Asegura que el formulario tenga un ancho mínimo */
+  }
+  
+  .contact-form h1.heading {
+    margin-bottom: 20px;
+  }
+  
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact input,
+  .contact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact input[type='submit'] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .contact input[type='submit']:hover {
+    background-color: #0056b3;
+  }
+  
+  .map-qr {
+    flex: 1;
+    min-width: 300px; /* Asegura que la sección del mapa tenga un ancho mínimo */
+  }
+  
+  .map-qr h1.heading {
+    margin-bottom: 20px;
+  }
+  
+  .address {
+    margin-bottom: 20px;
+  }
+  
+  .map-container {
+    margin-bottom: 20px;
+  }
+  
+  .qr-container {
+    text-align: center;
+  }
+  
+  .qr-container img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  @media (max-width: 768px) {
+    .ubicacion-contacto {
+      flex-direction: column;
+    }
+  }
+  
+  .address,
+  .contact-info,
+  .qr-container {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center; /* Opcional, para centrar el texto */
+  }

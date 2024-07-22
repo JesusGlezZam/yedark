@@ -22,7 +22,7 @@ export const YedarkRutas = () => {
               <Route path="/inicio" element={<Inicio/>} />
               <Route path="/quienes-somos" element={<QuienesSomos/>} />
               <Route path="/servicios" element={<Servicios/>} />
-              <Route path="/contacto" element={<UbicacionContacto/>} />
+              <Route path="/ubicacion_contacto" element={<UbicacionContacto/>} />
 
 
 

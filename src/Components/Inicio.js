@@ -14,7 +14,7 @@ export const Inicio = () => {
       </section>
         
 
-      <section className=''>
+      <section className='contact-info'>
         <h3>¿Por qué elegir nuestros servicios?</h3>
         <p>
           Con nuestra experiencia y equipo especializado, ofrecemos soluciones personalizadas que cumplen con los más altos estándares de calidad. Trabajamos para asegurar que cada pieza que fabricamos sea precisa y de la mejor calidad posible, ayudando a que tus proyectos sean exitosos.
