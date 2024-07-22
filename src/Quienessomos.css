@@ -1,0 +1,72 @@
+.quienes-somos {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .header-seccion {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .header-seccion h1 {
+    font-size: 2.5em;
+    color: #fa4529;
+  }
+  
+  .header-seccion p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .ofrecemos, .beneficios {
+    margin-bottom: 40px;
+  }
+  
+  .ofrecemos h2, .beneficios h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #fa4529;
+    text-align: center;
+  }
+  
+  .servicios-contenido, .beneficios-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .servicio-item, .beneficio-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .servicio-item h3, .beneficio-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .servicio-item p, .beneficio-item p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .contacto {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .contacto p {
+    font-size: 1.2em;
+    color: #fa4529;
+  }
+  

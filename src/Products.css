@@ -1,0 +1,105 @@
+/* Products.css */
+
+/* Contenedor de las tarjetas */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Estilo para cada tarjeta de maquinaria */
+  .work-item {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 400px; /* Ancho base de las tarjetas */
+    max-width: 400px; /* Ancho máximo para hacer las tarjetas más anchas */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .work-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Encabezado de cada maquinaria */
+  .work-item h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  /* Subtítulos de especificaciones y descripciones */
+  .work-item h3 {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+  
+  /* Lista de productos */
+  .work-item ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .work-item ul li {
+    background-color: #e0f7fa;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+  
+  /* Separador opcional para productos */
+  .work-item .product-divider {
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+  }
+  
+
+/* Estilo para el enlace de volver */
+/* Estilo para el encabezado de la página */
+.page-header {
+  width: 85%;
+  margin: 0 auto; /* Centra horizontalmente */
+  position: relative; /* Para posicionar elementos dentro del contenedor */
+  text-align: center; /* Centra el texto dentro del header */
+  height: 100px; /* Opcional, ajusta según tu necesidad */
+  display: flex;
+  justify-content: center; /* Centra los elementos hijos horizontalmente */
+  align-items: center; /* Alinea verticalmente */
+}
+
+/* Estilo para el enlace de volver */
+.back-link {
+  position: absolute; /* Posiciona el enlace de forma absoluta */
+  right: 0; /* Lo mueve al lado derecho */
+  display: inline-block;
+  background-color: #007bff; /* Color de fondo */
+  color: white; /* Color del texto */
+  border-radius: 4px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 1em; /* Tamaño de fuente */
+  text-align: center; /* Alineación del texto */
+  transition: background-color 0.3s ease; /* Transición de color */
+}
+  
+  .back-link:hover {
+    background-color: #0056b3; /* Color de fondo en hover */
+  }
+  
+  /* Estilo para el pie de página */
+  .page-footer {
+    width: 85%;
+    margin: 0 auto; /* Centra horizontalmente */
+    position: relative; /* Para posicionar elementos dentro del contenedor */
+    text-align: center; /* Centra el texto dentro del footer */
+    height: 100px; /* Debe ser igual al height del header */
+    display: flex;
+    justify-content: center; /* Centra los elementos hijos horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+  }

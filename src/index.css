@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa; /* Color de fondo ligero para toda la página */
+}
+
+/* Estilos generales para la página de inicio */
+.home {
+  font-family: Arial, sans-serif; /* Asegúrate de que la fuente sea consistente */
+   padding: 0 60px; /* Espacio en los lados */
+}
+
+/* Estilos para el encabezado */
+.header {
+  display: flex;
+  justify-content: space-between; /* Espacio entre el logo y la navegación */
+  align-items: center;
+  list-style: none;
+  height: 120px;
+  border-bottom: 3px solid #333; /* Color de borde más suave */
+  padding: 0 20px; /* Espacio en los lados */
+  background-color: #fff; /* Fondo blanco para el encabezado */
+}
+
+.header .logo {
+  box-shadow: 0 2px 5px rgba(2, 3, 3, 0.2); /* Sombra ligera */
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header li {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px; /* Tamaño de fuente ajustado */
+  margin: 0 15px;
+}
+
+.header li a {
+  color: #333; /* Color de texto más suave */
+  text-decoration: none;
+  transition: color 300ms;
+}
+
+.header .active,
+.header a:hover {
+  color: #fa4529; /* Color del enlace al pasar el ratón */
+}
+
+
+/* Estilos para las secciones */
+.section-about,
+.section-services,
+.section-why {
+  padding: 50px 20px;
+  text-align: center;
+  margin: 20px 0; /* Espacio arriba y abajo de cada sección */
+}
+
+/* Estilos específicos para cada sección */
+.section-about,
+.section-services,
+.section-why {
+  padding: 50px 20px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.section-about,
+.section-why {
+  background-color: #f1f1f1; /* Fondo gris claro para secciones */
+}
+
+.section-services {
+  background-color: #fff; /* Fondo blanco para diferenciar */
+}
+
+.section-about h2,
+.section-services h2,
+.section-why h3 {
+  color: #333;
+}
+
+.section-about p,
+.section-services p,
+.section-why p {
+  color: #555;
+  line-height: 1.6;
+}
+
+
+/* Estilo para centrar el contenido dentro de la sección de servicios */
+.type-services {
+  padding: 80px 20px; /* Espacio alrededor del contenido */
+  background-color: #fff; /* Fondo blanco para diferenciar */
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra los elementos */
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+.work-item {
+  background-color: #fff; /* Fondo blanco para los elementos */
+  border: 1px solid #ddd; /* Borde ligero */
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px; /* Ancho fijo */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.work-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.work-item h2,
+.work-item h3 {
+  margin: 10px 0;
+}
+
+.work-item a {
+  text-decoration: none;
+  color: #333;
+}
+
+.work-item a:hover {
+  color: #fa4529;
+}
