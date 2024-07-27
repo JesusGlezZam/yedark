@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../UbicacionContacto.css'; 
+import { Link } from 'react-router-dom';
 
 export const UbicacionContacto = () => {
     const [formData, setFormData] = useState({
@@ -75,6 +76,21 @@ export const UbicacionContacto = () => {
             />
             <input type='submit' value="Enviar" />
           </form>
+        
+          <Link 
+            to="https://www.facebook.com/groups/189578683091175" 
+            target="_blank" 
+            class="facebook-button" 
+            aria-label="Visita nuestro grupo de Facebook"
+          >
+           <div className="icon-container">
+              <img src="/images/facebook.png" alt="Facebook" className="facebook-icon" />
+           </div>
+            
+          </Link>
+
+          <span class="button-text">Consulta nuestro Grupo de Facebook</span>
+
         </div>
   
         <div className='map-qr'>
@@ -82,7 +98,7 @@ export const UbicacionContacto = () => {
           <p className='address' >
             Estamos ubicados en: Av. Morelos 210, Huicalco, Tizayuca, C.P. 43800
           </p>
-          <div className='map-container'>
+         <div className='map-container'>
             <iframe
               title="Ubicación en Google Maps"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.049964578148!2d-99.11873408469128!3d19.644075586527257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842ad2a2c29b70eb%3A0x1cfefb570cf46280!2sAv.%20Morelos%20210%2C%20Huicalco%2C%20Tizayuca%2C%20C.P.%2043800!5e0!3m2!1ses-419!2smx!4v1687010408750!5m2!1ses-419!2smx"
@@ -92,7 +108,7 @@ export const UbicacionContacto = () => {
               allowFullScreen
               loading="lazy"
             ></iframe>
-          </div>
+          </div>*
           <div className='qr-container'>
             <p><strong>Puedes escanear el código QR para enviarnos un WhatsApp: </strong></p>
             <img
@@ -100,6 +116,7 @@ export const UbicacionContacto = () => {
               alt="QR Code para WhatsApp"
             />
           </div>
+          
         </div>
             <section className='contact-info'>
             <h3>¿Por qué elegir nuestros servicios?</h3>
